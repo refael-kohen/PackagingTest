@@ -1,0 +1,12 @@
+language: python
+python:
+- '3.7'
+script:
+- nose2 -v
+deploy:
+  provider: pypi
+  server: https://test.pypi.org/legacy/
+  user: refaelkohen
+  password:
+    secure: q7fMTO15X0hyv3d83j1v3TiQ/iW733uzoO909QGXEoCF2/eOIcHuadu1vkFSBumB6ioD9jxhn+O8IVRjVGVbt0U0HrAoZSDSBBSP1xQ28A/ZmHMkakr7Mb3VSNQ11h4sKFo0WNODpaUbDIbY6G7JXMUPCGkljDKRhsvrTi8TR8vT7cu23KdnVtxZFAWRbAuUhSGk1aOv8hd0k7clrrHXutf/NJGyGyD1jgqBCFeb4Rz8lXt0KLuRs1HgKJOf8TGggt0Be40ThO3+Ijij/Ycw+sXw+dqvzZ1IbRTYoLC9z88qC8fH32Nl7wz60p5aMzrk8lB4kIRoUSh079QamLQ8ZPlAkwv0yj9tvfTW/eKy/b3MfQq2LWNFj9TzWhJnMkSYwz79i0REbUzuXxO7vmJ45HopORhNeRJKSwWyaujbmDty0nIiYiGyTbkrNWtTND+XNIAsltyknjeTdSLmFW3/ECGszsY9AU+F1U5gEanEvEtVFf6ZubX4/776fLWQR+SZPj/AHe1f7DqjIAdO+cxee490ucfFWb0SKSOom4QoITA/3oTAQLSl/VnzWFHJqVctnKUMcWyVOmTnKRk+CnW/Lf0aDAI7hde4Cs509qFCSxHkqwBjstlC46sqx4rhbKpL8c6vPSsKIomMv5ng7ljH1crb4VlX95vdUByYZDZz1/s=
+  distributions: sdist bdist_wheel
